@@ -15,7 +15,7 @@ func main() {
   e := echo.New()
   e.GET("/reverse/:text", reverse)
   e.POST("/signup", signup)
-  e.Logger.Fatal(e.Start(":1323"))
+  e.Logger.Fatal(e.Start(":5678"))
 }
 
 func reverse_string(s string) string {
