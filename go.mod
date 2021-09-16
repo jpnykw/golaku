@@ -1,4 +1,4 @@
-module rest_api
+module golaku
 
 go 1.17
 
