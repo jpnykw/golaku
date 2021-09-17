@@ -35,3 +35,9 @@ curl --location --request POST 'http://0.0.0.0:5678/signup' \
 --form 'email="jpnykw@gmail.com"'
 ```
 
+## Database connection (MySQL)
+
+```sh
+export MYSQL_PASS=pass # Runs if the environment variable doesn't exist
+go run ./src/connect_db.go
+```
