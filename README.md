@@ -23,13 +23,13 @@ go run ./src/rest_api.go
 ### Reverse string (GET)
 
 ```sh
-curl --location --request GET 'http://localhost:5678/reverse/nyanko'
+curl --location --request GET 'http://0.0.0.0:5678/reverse/nyanko'
 ```
 
 ### Signup user (POST)
 
 ```sh
-curl --location --request POST 'http://localhost:5678/signup' \
+curl --location --request POST 'http://0.0.0.0:5678/signup' \
 --form 'name="jpnykw"' \
 --form 'age="19"' \
 --form 'email="jpnykw@gmail.com"'
