@@ -26,13 +26,19 @@ go run ./src/rest_api.go
 curl --location --request GET 'http://0.0.0.0:5678/reverse/nyanko'
 ```
 
-### Signup user (POST)
+### Create user (POST)
 
 ```sh
 curl --location --request POST 'http://0.0.0.0:5678/signup' \
 --form 'name="jpnykw"' \
 --form 'age="19"' \
 --form 'email="jpnykw@gmail.com"'
+```
+
+### Get user (GET)
+
+```sh
+curl --location --request GET 'http://0.0.0.0:5678/users/get/jpnykw'
 ```
 
 ## Database connection (MySQL)
