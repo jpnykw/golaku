@@ -26,6 +26,7 @@ func connect() *sql.DB {
   if err != nil {
     fmt.Println(err.Error())
   }
+
   return db
 }
 
@@ -41,10 +42,10 @@ func main() {
 
   // testing simple query
   res, _ := db.Query("SHOW TABLES")
-  var database string
+  var tables string
   for res.Next() {
-    res.Scan(&database)
-    fmt.Println(database)
+    res.Scan(&tables)
+    fmt.Println(tables)
   }
 }
 

@@ -37,7 +37,8 @@ curl --location --request POST 'http://0.0.0.0:5678/signup' \
 
 ## Database connection (MySQL)
 
+First, you need to create the `.env` file and set the necessary values in the environment variables.
+
 ```sh
-export MYSQL_PASS=pass # Runs if the environment variable doesn't exist
 go run ./src/connect_db.go
 ```
